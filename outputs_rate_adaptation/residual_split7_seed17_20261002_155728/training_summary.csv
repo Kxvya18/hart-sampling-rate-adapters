@@ -1,0 +1,4 @@
+method,steps,epochs,best_epoch,best_validation_nll,stop_reason,final_validation_nll,best_at_final_epoch,elapsed_seconds
+blind_adapter,600,7,6,0.5625183003979296,max_steps,0.593827724141539,False,31.906449375001102
+rate_adapter,600,7,6,0.5836367486853128,max_steps,0.6005085681081065,False,41.03809729199929
+residual_support_blind,600,7,6,0.567242444350631,max_steps,0.5840274030827004,False,32.651843625000765

@@ -1,0 +1,14 @@
+--index-url https://download.pytorch.org/whl/cpu
+--extra-index-url https://pypi.org/simple
+
+torch==2.11.0
+granite-tsfm==0.3.2
+transformers==4.56.0
+accelerate==1.13.0
+safetensors==0.7.0
+numpy==2.4.4
+pandas==3.0.3
+scikit-learn==1.8.0
+psutil==7.2.2
+streamlit==1.57.0
+plotly==6.7.0

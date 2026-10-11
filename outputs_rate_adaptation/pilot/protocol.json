@@ -1,0 +1,114 @@
+{
+  "source_repo": "122b4a8b07758deedfcf3b1e87f03eed5ad55967",
+  "checkpoint_sha256": "88b8d1790a43cb5c96c5bba5da60c81ae08657024f9747cbe52d45c2acfd2e6d",
+  "arguments": {
+    "data": "datasets/harth_raw",
+    "smoke_test": false,
+    "checkpoint": "/Users/boolu/Desktop/simulations/hart_rate_reliability/finetuning_HART/pretrained_checkpoint",
+    "output": "outputs_rate_adaptation/pilot",
+    "methods": [
+      "clean_head",
+      "aug_head",
+      "rate_adapter",
+      "full_align",
+      "shared_align"
+    ],
+    "windows_per_subject": 40,
+    "epochs": 5,
+    "max_steps": 80,
+    "batch_size": 32,
+    "rank": 8,
+    "lr": 0.001,
+    "align_weight": 0.1,
+    "patience": 3,
+    "seed": 7,
+    "threads": 4,
+    "device": "auto"
+  },
+  "subjects": {
+    "train": [
+      "S006",
+      "S015",
+      "S012",
+      "S028",
+      "S013",
+      "S029",
+      "S027",
+      "S009",
+      "S017",
+      "S019",
+      "S021",
+      "S008",
+      "S023",
+      "S014"
+    ],
+    "val": [
+      "S025",
+      "S024",
+      "S026",
+      "S020"
+    ],
+    "test": [
+      "S010",
+      "S018",
+      "S022",
+      "S016"
+    ]
+  },
+  "train_rates": [
+    30,
+    15,
+    10
+  ],
+  "held_out_rates": [
+    12,
+    6
+  ],
+  "shared_cutoff": "0.8 times lower-rate Nyquist",
+  "normalization": "training subjects only",
+  "class_counts": {
+    "train": {
+      "1": 107,
+      "2": 48,
+      "3": 3,
+      "4": 7,
+      "5": 2,
+      "6": 34,
+      "7": 232,
+      "8": 23,
+      "13": 38,
+      "14": 4,
+      "130": 4,
+      "140": 0
+    },
+    "val": {
+      "1": 39,
+      "2": 10,
+      "3": 0,
+      "4": 1,
+      "5": 1,
+      "6": 4,
+      "7": 27,
+      "8": 14,
+      "13": 36,
+      "14": 5,
+      "130": 0,
+      "140": 1
+    },
+    "test": {
+      "1": 37,
+      "2": 5,
+      "3": 0,
+      "4": 1,
+      "5": 0,
+      "6": 29,
+      "7": 52,
+      "8": 12,
+      "13": 3,
+      "14": 0,
+      "130": 0,
+      "140": 0
+    }
+  },
+  "device": "mps"
+}

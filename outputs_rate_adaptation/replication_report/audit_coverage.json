@@ -1,0 +1,24 @@
+{
+  "final_metrics.csv": [
+    17,
+    27
+  ],
+  "final_per_subject.csv": [
+    17,
+    27
+  ],
+  "rate_metadata_audit.csv": [
+    17,
+    27
+  ],
+  "training_summary.csv": [
+    7,
+    17,
+    27
+  ],
+  "per_class.csv": [
+    7,
+    17,
+    27
+  ]
+}

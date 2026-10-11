@@ -1,0 +1,6 @@
+method,steps,epochs,best_epoch,best_validation_nll,stop_reason,final_validation_nll,best_at_final_epoch,elapsed_seconds
+blind_adapter,600,7,6,0.4811028546712936,max_steps,0.5403715180235743,False,63.96561025000119
+rate_adapter,600,7,6,0.4985312013167665,max_steps,0.5467120279537543,False,70.95040570900164
+support_context,600,7,6,0.49178574387129315,max_steps,0.5772767821316127,False,68.28740566600027
+residual_support_blind,600,7,6,0.4913348207808865,max_steps,0.5555266424458565,False,69.37215212500087
+residual_support,600,7,6,0.4831435867332839,max_steps,0.5819467005603635,False,73.51820766699893

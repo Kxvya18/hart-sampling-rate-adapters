@@ -1,0 +1,15 @@
+._*
+.DS_Store
+__pycache__/
+.env
+*.npz
+*.npy
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.zip
+data/
+datasets/
+checkpoints/
+.venv/

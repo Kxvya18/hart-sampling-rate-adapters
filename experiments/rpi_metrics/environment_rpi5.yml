@@ -1,0 +1,8 @@
+name: naman_tspulse
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - -r env/requirements_rpi5.txt

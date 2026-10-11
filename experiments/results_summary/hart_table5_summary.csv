@@ -1,0 +1,10 @@
+Metric,RPi 5,CPU (Ultra 9),GPU (RTX 5090)
+Fine-tuning Time (ms),"7,046,667","809,873","60,653"
+Inference Time (ms),24.45,1.92,2.04
+Batched Inference Time (ms),56.31,3.78,2.13
+Throughput (windows/sec),286.48,"4,238.34","7,498.26"
+Memory Usage (MB),"1,255 (RSS)","2,210 (RSS)",514 (VRAM)
+Accuracy,0.8032,0.8032,0.8343
+F1-score,0.6165,0.6165,0.6733
+Precision,0.6867,0.6867,0.7345
+Recall,0.6354,0.6354,0.6757

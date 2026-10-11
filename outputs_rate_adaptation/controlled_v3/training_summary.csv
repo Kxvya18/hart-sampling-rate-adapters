@@ -1,0 +1,7 @@
+method,steps,epochs,best_epoch,best_validation_nll,stop_reason,best_at_final_epoch,elapsed_seconds
+clean_head,600,7,5,0.8640969526380325,max_steps,False,23.60797908299719
+aug_head,600,7,7,0.7093678182362618,max_steps,True,29.12577395799599
+rate_adapter,600,7,6,0.6111367551981183,max_steps,False,64.71665433399903
+full_align,600,7,6,0.6117041656645533,max_steps,False,71.16147287499916
+shared_align,600,7,6,0.6104566235941411,max_steps,False,124.46070220800175
+blind_adapter,600,7,4,0.5960037520483266,max_steps,False,66.1443627500048

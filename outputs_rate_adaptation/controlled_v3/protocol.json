@@ -1,0 +1,243 @@
+{
+  "source_repo": "122b4a8b07758deedfcf3b1e87f03eed5ad55967",
+  "checkpoint_sha256": "88b8d1790a43cb5c96c5bba5da60c81ae08657024f9747cbe52d45c2acfd2e6d",
+  "arguments": {
+    "data": "datasets/harth_raw",
+    "smoke_test": false,
+    "checkpoint": "/Users/boolu/Desktop/simulations/hart_rate_reliability/finetuning_HART/pretrained_checkpoint",
+    "output": "outputs_rate_adaptation/controlled_v3",
+    "methods": [
+      "clean_head",
+      "aug_head",
+      "rate_adapter",
+      "full_align",
+      "shared_align",
+      "blind_adapter"
+    ],
+    "windows_per_subject": 200,
+    "epochs": 12,
+    "max_steps": 600,
+    "batch_size": 32,
+    "rank": 8,
+    "lr": 0.001,
+    "align_weight": 0.1,
+    "patience": 4,
+    "seed": 7,
+    "data_seed": 7,
+    "split_seed": 7,
+    "train_sampling": "sqrt-balanced",
+    "cache": "datasets/window_cache",
+    "threads": 4,
+    "device": "mps"
+  },
+  "dataset_provenance": {
+    "files": [
+      {
+        "path": "/Users/boolu/Desktop/simulations/hart_rate_reliability/datasets/harth_raw/harth/S006.csv",
+        "bytes": 58097651,
+        "mtime_ns": 1676983614000000000
+      },
+      {
+        "path": "/Users/boolu/Desktop/simulations/hart_rate_reliability/datasets/harth_raw/harth/S008.csv",
+        "bytes": 59837464,
+        "mtime_ns": 1676983614000000000
+      },
+      {
+        "path": "/Users/boolu/Desktop/simulations/hart_rate_reliability/datasets/harth_raw/harth/S009.csv",
+        "bytes": 22161722,
+        "mtime_ns": 1676983614000000000
+      },
+      {
+        "path": "/Users/boolu/Desktop/simulations/hart_rate_reliability/datasets/harth_raw/harth/S010.csv",
+        "bytes": 50314696,
+        "mtime_ns": 1676983614000000000
+      },
+      {
+        "path": "/Users/boolu/Desktop/simulations/hart_rate_reliability/datasets/harth_raw/harth/S012.csv",
+        "bytes": 56062032,
+        "mtime_ns": 1676983615000000000
+      },
+      {
+        "path": "/Users/boolu/Desktop/simulations/hart_rate_reliability/datasets/harth_raw/harth/S013.csv",
+        "bytes": 52955349,
+        "mtime_ns": 1676983615000000000
+      },
+      {
+        "path": "/Users/boolu/Desktop/simulations/hart_rate_reliability/datasets/harth_raw/harth/S014.csv",
+        "bytes": 53364698,
+        "mtime_ns": 1676983615000000000
+      },
+      {
+        "path": "/Users/boolu/Desktop/simulations/hart_rate_reliability/datasets/harth_raw/harth/S015.csv",
+        "bytes": 62410313,
+        "mtime_ns": 1676983615000000000
+      },
+      {
+        "path": "/Users/boolu/Desktop/simulations/hart_rate_reliability/datasets/harth_raw/harth/S016.csv",
+        "bytes": 50797778,
+        "mtime_ns": 1676983616000000000
+      },
+      {
+        "path": "/Users/boolu/Desktop/simulations/hart_rate_reliability/datasets/harth_raw/harth/S017.csv",
+        "bytes": 52265446,
+        "mtime_ns": 1676983616000000000
+      },
+      {
+        "path": "/Users/boolu/Desktop/simulations/hart_rate_reliability/datasets/harth_raw/harth/S018.csv",
+        "bytes": 46068295,
+        "mtime_ns": 1676983616000000000
+      },
+      {
+        "path": "/Users/boolu/Desktop/simulations/hart_rate_reliability/datasets/harth_raw/harth/S019.csv",
+        "bytes": 42611164,
+        "mtime_ns": 1676983616000000000
+      },
+      {
+        "path": "/Users/boolu/Desktop/simulations/hart_rate_reliability/datasets/harth_raw/harth/S020.csv",
+        "bytes": 32941261,
+        "mtime_ns": 1676983616000000000
+      },
+      {
+        "path": "/Users/boolu/Desktop/simulations/hart_rate_reliability/datasets/harth_raw/harth/S021.csv",
+        "bytes": 46869503,
+        "mtime_ns": 1676983616000000000
+      },
+      {
+        "path": "/Users/boolu/Desktop/simulations/hart_rate_reliability/datasets/harth_raw/harth/S022.csv",
+        "bytes": 48467406,
+        "mtime_ns": 1676983617000000000
+      },
+      {
+        "path": "/Users/boolu/Desktop/simulations/hart_rate_reliability/datasets/harth_raw/harth/S023.csv",
+        "bytes": 12914135,
+        "mtime_ns": 1676983617000000000
+      },
+      {
+        "path": "/Users/boolu/Desktop/simulations/hart_rate_reliability/datasets/harth_raw/harth/S024.csv",
+        "bytes": 16722098,
+        "mtime_ns": 1676983617000000000
+      },
+      {
+        "path": "/Users/boolu/Desktop/simulations/hart_rate_reliability/datasets/harth_raw/harth/S025.csv",
+        "bytes": 21695989,
+        "mtime_ns": 1676983617000000000
+      },
+      {
+        "path": "/Users/boolu/Desktop/simulations/hart_rate_reliability/datasets/harth_raw/harth/S026.csv",
+        "bytes": 18844878,
+        "mtime_ns": 1676983617000000000
+      },
+      {
+        "path": "/Users/boolu/Desktop/simulations/hart_rate_reliability/datasets/harth_raw/harth/S027.csv",
+        "bytes": 15873565,
+        "mtime_ns": 1676983617000000000
+      },
+      {
+        "path": "/Users/boolu/Desktop/simulations/hart_rate_reliability/datasets/harth_raw/harth/S028.csv",
+        "bytes": 16949909,
+        "mtime_ns": 1676983617000000000
+      },
+      {
+        "path": "/Users/boolu/Desktop/simulations/hart_rate_reliability/datasets/harth_raw/harth/S029.csv",
+        "bytes": 16742233,
+        "mtime_ns": 1676983617000000000
+      }
+    ],
+    "data_seed": 7,
+    "windows_per_subject": 200,
+    "loader_sha256": "cc91d4f64699bc8b7550a478a57e93cf4b7bb09173d5172bdc44c3fda1f678b8"
+  },
+  "sampling": "Uniform valid windows per subject; balancing applies only to training batches",
+  "experiment_source_sha256": {
+    "run.py": "307503daeb2da95f125f0b745da7e74cd6d186ce8899f2f01e9dd6621d51f71b",
+    "model.py": "5b535553be9e3f55691caedaf87b3ee1fded46ab4670dee0d49290e408c147d8",
+    "views.py": "bd4bbdc4b8c94f669eeb4887741788dae91fa1f3c98bae5305e361da183c0afe",
+    "diagnostics.py": "e29db8563b6a5bd13b21c3641becdddb567fc94b413ec73e2f2fcd8f936f4a4f"
+  },
+  "subjects": {
+    "train": [
+      "S006",
+      "S015",
+      "S012",
+      "S028",
+      "S013",
+      "S029",
+      "S027",
+      "S009",
+      "S017",
+      "S019",
+      "S021",
+      "S008",
+      "S023",
+      "S014"
+    ],
+    "val": [
+      "S025",
+      "S024",
+      "S026",
+      "S020"
+    ],
+    "test": [
+      "S010",
+      "S018",
+      "S022",
+      "S016"
+    ]
+  },
+  "train_rates": [
+    30,
+    15,
+    10
+  ],
+  "held_out_rates": [
+    12,
+    6
+  ],
+  "shared_cutoff": "0.8 times lower-rate Nyquist",
+  "normalization": "training subjects only",
+  "class_counts": {
+    "train": {
+      "1": 585,
+      "2": 231,
+      "3": 29,
+      "4": 11,
+      "5": 12,
+      "6": 205,
+      "7": 1314,
+      "8": 161,
+      "13": 222,
+      "14": 13,
+      "130": 17,
+      "140": 0
+    },
+    "val": {
+      "1": 206,
+      "2": 69,
+      "3": 5,
+      "4": 12,
+      "5": 7,
+      "6": 28,
+      "7": 173,
+      "8": 75,
+      "13": 185,
+      "14": 27,
+      "130": 9,
+      "140": 4
+    },
+    "test": {
+      "1": 207,
+      "2": 12,
+      "3": 14,
+      "4": 11,
+      "5": 7,
+      "6": 100,
+      "7": 368,
+      "8": 60,
+      "13": 19,
+      "14": 0,
+      "130": 1,
+      "140": 1
+    }
+  },
+  "device": "mps"
+}

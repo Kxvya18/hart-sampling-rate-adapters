@@ -1,0 +1,23 @@
+# Minimal CPU/ARM requirements for Raspberry Pi 5 fine-tuning.
+# Keep this file small: the full x86/CUDA export is in naman_tspulse_x86_export.yml
+# only for reference and should not be used directly on the Pi.
+
+accelerate>=0.30
+filelock
+huggingface-hub
+joblib
+numpy
+packaging
+pandas
+psutil
+pyarrow
+pyyaml
+requests
+safetensors
+scikit-learn
+scipy
+tensorboard
+tokenizers
+torch
+tqdm
+transformers>=4.40
