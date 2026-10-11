@@ -1,6 +1,6 @@
 # Contextualization-Aware Adapter Placement for Sampling-Rate Transfer in Wearable HAR
 
-**Kavya Kalavala and Mahadevi S**, Manipal Institute of Technology Bengaluru. Presented at CIMA 2026.
+**Kavya Kalavala**, Manipal Institute of Technology Bengaluru.
 
 Resampling restores the nominal input size of a wearable signal but cannot recover information lost when a sensor
 records at a lower rate. This study asks where lightweight adapters should sit relative to HART's frozen
