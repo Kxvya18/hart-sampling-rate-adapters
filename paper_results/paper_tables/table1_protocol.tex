@@ -1,0 +1,18 @@
+\begin{tabular}{lll}
+\toprule
+Block & Quantity & Value \\
+\midrule
+Recordings & HARTH participants & 22 \\
+Inputs & Four-second window & 120 steps, 6 channels \\
+Split 7 and 17 & Train, validation, test windows & 2800, 800, 800 \\
+Confirmation & Train, validation, test windows & 2800, 800, 3452 \\
+Labels & Test-supported labels in 7, 17, 37 & 11, 9, 12 \\
+Acquisition & Training rates & 30, 15, 10 Hz \\
+Acquisition & Unseen test rates & 12, 6 Hz \\
+Backbone & Width, layers, patch length & 48, 8, 12 \\
+Optimization & Updates, paired batch, seeds & 600, 32 pairs, 3 \\
+Trainable & Head-only control & 8076 \\
+Trainable & Early or late adapter plus head & 9948 \\
+Trainable & Last-block control & 23205 \\
+\bottomrule
+\end{tabular}
